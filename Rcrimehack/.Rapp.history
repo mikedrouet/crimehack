@@ -1,0 +1,559 @@
+1 + 2 + 3
+c(1,2,3) * c(10,10,10)
+summary(cars)
+hist(cars$speed,main="")
+plot(cars,xlab="Speed(mph)",
+ylab="Stopping distance(ft)")
+help(lm)
+example(lm)
+use example(lm)
+ls
+clear
+ls
+(.packages())
+f <- function(x) { 1 - x + (3 * x^2) - x^3 }
+f(-0.5)
+plot(f, -0.5, 2.5)
+crimedata <- read.csv("~/chicagocrime/download.csv")
+attach(crimedata)
+print crimedata
+crimedata
+homicides <- homicide
+area <- community_area_name
+area <- community_name
+plot (homicodes, area)
+plot(homicides,area)
+homicide
+plot(area, homicide)
+narc <- narcotics
+plot(area,narcotics)
+plot (narcotics, area)
+plot (area,narcotics)
+list
+crimedata.m <- as.matrix(crimedata[,2:5])
+barplot(crimedata.m[1,])
+crimedata.m <- as.matrix(crimedata[,1:5])
+barplot(crimedata.m[1,])
+> crimedata <- read.csv("~/chicagocrime/download.csv")#
+> attach(crimedata)#
+> print crimedata
+crimedata <- read.csv("~/chicagocrime/download.csv")
+attach(crimedata)
+crimedata
+crimedata <- read.csv("~/chicagocrime/download.csv")
+crimedata
+crimedata <- read.csv("~/chicagocrime/download.csv")
+attach(crimedata)
+crimedata
+/read
+rimedata <- read.csv("~/chicagocrime/download.csv")
+crimedata <- read.csv("~/chicagocrime/download.csv")
+attach(crimedata)
+crimedata <- read.csv("~/chicagocrime/download.csv")
+attach(crimedata)
+crime <- read.csv("~/chicagocrime/download.csv")
+attach(crime)
+plot(crime)
+name <- community_name
+dam <- criminal_damage
+plot(name,dam)
+library(ggplot2)
+library(foreign)
+library(ggplot2)#
+library(foreign)#
+library(stringr)#
+library(lubridate)#
+library(plyr)#
+library(xtable)#
+library(scales)#
+library(RColorBrewer)#
+library(ggmap)
+library(maptools)#
+library(sp)#
+library(rgdal)#
+library(spatstat)
+install.packages("ggplot2")
+library(ggplot)
+/in
+install.packages("ggplot2")
+library(ggplot)
+library(ggplot2)
+Crime Incident Plots#
+library(ggplot2)#
+library(foreign)#
+library(stringr)#
+library(lubridate)#
+library(plyr)#
+library(xtable)#
+library(scales)#
+library(RColorBrewer)#
+library(ggmap)
+library(ggplot2)
+install.packages(lubridate)
+Crime Incident Plots#
+library(ggplot2)#
+library(foreign)#
+library(stringr)#
+library(lubridate)#
+library(plyr)#
+library(xtable)#
+library(scales)#
+library(RColorBrewer)#
+library(ggmap)#
+## gis libraries#
+library(maptools)#
+library(sp)#
+library(rgdal)#
+library(spatstat)
+city_shp <- readOGR(dsn='Baltcity_20Line', layer='baltcity_line')
+ogrINfo
+library(ggplot2)#
+library(maps)#
+#load us map data#
+all_states <- map_data("state")#
+#plot all states with ggplot#
+p <- ggplot()#
+p <- p + geom_polygon( data=all_states, aes(x=long, y=lat, group = group),colour="white", fill="grey10" )#
+p
+library(ggplot2)#
+library(maptools)
+chicago <- readShapePoly("Neighborhoods_2012/Neighborhoods_2012b") # Read the shapefile (from the 'maptools' library).#
+chicago <- fortify(chicago) # Organizes data into a neat data frame.#
+ggplot(chicago) + geom_polygon(aes(x=long, y=lat, group=group)) # "Filled" map#
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) # "Outline" map
+crime <- read.csv("http://data.cityofchicago.org/api/views/qnrb-dui6/rows.csv")
+library(ggplot2)#
+library(maptools)
+library(ggplot2)#
+library(foreign)#
+library(stringr)#
+library(lubridate)#
+library(plyr)#
+library(xtable)#
+library(scales)#
+library(RColorBrewer)#
+library(ggmap)#
+library(maptools)#
+library(sp)#
+library(rgdal)#
+library(spatstat)#
+#
+setwd("~/Rcrimehack") # Enter the location of your working directory.#
+#
+chicago <- readShapePoly("Neighborhoods_2012/Neighborhoods_2012b") # Read the shapefile (from the 'maptools' library).#
+chicago <- fortify(chicago) # Organizes data into a neat data frame.#
+##ggplot(chicago) + geom_polygon(aes(x=long, y=lat, group=group)) # "Filled" map#
+##ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) # "Outline" map#
+# city data is not in traditional latitutde and longitudes - in UTM#
+#
+##crimes <- read.csv("http://data.cityofchicago.org/api/views/qnrb-dui6/rows.csv")#
+crimes <- read.csv(file="chicrimes_small.csv",head=TRUE,sep=",")#
+#
+##ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) + geom_point(data=crimes, aes(x=X.Coordinate, y=Y.Coordinate))#
+#
+crimeTypeNames <- crimes$primary_type#
+crimeTypes <- unique(crimeTypeNames)#
+#
+crimeDataSubset <- subset(crimes, crimes$Primary.Type == 'THEFT')#
+##ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) + geom_point(data=crimeDataSubset, aes(x=X.Coordinate, y=Y.Coordinate))#
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+	stat_density2d(#
+	aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+	alpha = ..level..),#
+	size = 2, bins = 4, data = crimeDataSubset,#
+	geom = "polygon")
+crimeTypes
+crimeTypeNames <- crimes$Primary.Type#
+crimeTypes <- unique(crimeTypeNames)
+crimeTypes
+crimeTypeNames <- crimes$Primary.Type#
+crimeTypes <- unique(crimeTypeNames)
+crimeSubsets <- list()#
+#
+for (crimeType in crimeTypes)#
+{#
+	crimeSubsets[[crimeType]] <- subset(crimes, crimes$Primary.Type == crimeType)#
+}
+crimeSubsets
+crimes <- read.csv(file="crimes_2013.csv",head=TRUE,sep=",")
+crimeTypeNames <- crimes$Primary.Type#
+crimeTypes <- unique(crimeTypeNames)
+crimeTypeNames
+crimeDataSubset <- subset(crimes, crimes$Primary.Type == 'THEFT')
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+	stat_density2d(#
+	aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+	alpha = ..level..),#
+	size = 2, bins = 4, data = crimeDataSubset,#
+	geom = "polygon")
+crimeTypeNames <- crimes$Primary.Type#
+crimeTypes <- unique(crimeTypeNames)
+crimeSubsets <- list()#
+for (crimeType in crimeTypes)#
+{#
+	crimeSubsets[[crimeType]] <- subset(crimes, crimes$Primary.Type == crimeType)#
+}
+crimeDataSubset <- subset(crimes, crimes$Primary.Type == 'THEFT')
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+	stat_density2d(#
+	aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+	alpha = ..level..),#
+	size = 2, bins = 4, data = crimeDataSubset,#
+	geom = "polygon")
+for (crimeType in crimeTypes)#
+{#
+## All Incidents Densities#
+    ttl <- str_replace_all(str_replace_all(crimeType, '\\s', '_'),'_-_','_')#
+    crimeDataSubset <- subset(crimeData,#
+    (description==crimeType))#
+    p <- ggplot(chicago) + #
+    geom_point(data=crimeSubsets[[crimeType]], #
+    	aes(x=X.Coordinate, y=Y.Coordinate), #
+        shape='x',#
+        color=crimeTypes[[crimeType]][[1]],#
+        alpha='.8', guide=F) +#
+      stat_density2d(#
+		aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+		alpha = ..level..),#
+		size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+		geom = "polygon")  +#
+		annotate("text", x = 1405000, y = 565000,#
+    	label=paste(str_replace_all(str_replace(ttl, '_', '\n'),'_',' '), sep=''), size=8)#
+}
+for (crimeType in crimeTypes)#
+{#
+    ttl <- str_replace_all(str_replace_all(crimeType, '\\s', '_'),'_-_','_')#
+    ggplot(chicago) #
+    + geom_point(data=crimeSubsets[[crimeType]], #
+    	aes(x=X.Coordinate, y=Y.Coordinate), #
+        shape='x',#
+        color=1#
+        alpha='.8', guide=F) #
+    + stat_density2d(#
+		aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+		alpha = ..level..),#
+		size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+		geom = "polygon")  #
+	+ annotate("text", x = 1405000, y = 565000,#
+      label=paste(str_replace_all(str_replace(ttl, '_', '\n'),'_',' '), sep=''), size=8)#
+}
+for (crimeType in crimeTypes)#
+{#
+    ggplot(chicago) #
+    + geom_point(data=crimeSubsets[[crimeType]], #
+    	aes(x=X.Coordinate, y=Y.Coordinate), #
+        shape='x',#
+        color=1,#
+        alpha='.8', guide=F) #
+    + stat_density2d(#
+		aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+		alpha = ..level..,#
+		size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+		geom = "polygon")  #
+	+ annotate("text", x = 1405000, y = 565000,#
+      label=crimeType, size=8)#
+}
+for (crimeType in crimeTypes)#
+{#
+    ggplot(chicago) #
+    + geom_point(data=crimeSubsets[[crimeType]], #
+    	aes(x=X.Coordinate, y=Y.Coordinate), #
+        shape='x',#
+        color=1,#
+        alpha='.8', guide=F) #
+    + stat_density2d(#
+		aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+		alpha = ..level..,#
+		size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+		geom = "polygon")  #
+}
+for (crimeType in crimeTypes)#
++ {#
++     ggplot(chicago) #
++     + geom_point(data=crimeSubsets[[crimeType]], #
++     	aes(x=X.Coordinate, y=Y.Coordinate), #
++         shape='x',#
++         color=1,#
++         alpha='.8', guide=F) #
++     + stat_density2d(#
++ 		aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
++ 		alpha = ..level..,#
++ 		size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
++ 		geom = "polygon")  #
++ }
+for (crimeType in crimeTypes)#
+{#
+	ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+	stat_density2d(#
+	aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+	alpha = ..level..),#
+	size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+	geom = "polygon")	#
+}
+for (crimeType in crimeTypes)#
++ {#
++     p <- ggplot(chicago) #
++     + geom_point(data=crimeSubsets[[crimeType]], #
++     	aes(x=X.Coordinate, y=Y.Coordinate), #
++         shape='x',#
++         color=1,#
++         alpha='.8', guide=F) #
++     + stat_density2d(#
++ 		aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
++ 		alpha = ..level..,#
++ 		size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
++ 		geom = "polygon")  #
++ }
+for (crimeType in crimeTypes)#
+{#
+	p <- ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon")#
+	p	#
+}
+for (crimeType in crimeTypes)#
+{#
+	p <- ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") +#
+		+ ggsave(paste('img/',crimeType,'.png',sep=''))#
+}
+for (crimeType in crimeTypes)#
+{#
+	ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") +#
+}
+for (crimeType in crimeTypes)#
+{#
+	ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon")#
+}
+crimeType <- "THEFT"
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
++ 			stat_density2d(#
++ 				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
++ 				alpha = ..level..),#
++ 				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
++ 				geom = "polygon")
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon")
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon")#
+				opts(title = expression(crimeType))
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon")#
+			+ ggtile(crimeType)
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon")#
+			+ ggtitle(crimeType)
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon")#
+			+ ggtitle(crimeType)
+crimeType
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon")#
+			+ ggtitle(crimeType[1])
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon")#
+			+ ggtitle((paste(crimeType))
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon")#
+				opts(title = expression(crimeType)) + ggtitle(ttl)
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon")#
+				opts(title = expression(crimeType)) + ggtitle(ttl)
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") +#
+				labs(title=crimeType)
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") +#
+				labs(title=crimeType) + theme_nothing()
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") +#
+				labs(title=crimeType) + theme(legend.position = "none")
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") +#
+				labs(title=crimeType) + theme_nothing() + theme(legend.position = "none")
+for (crimeType in crimeTypes)#
+{#
+	p <- ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") +#
+				labs(title=crimeType)#
+}#
+p
+ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") +#
+				labs(title=crimeType) + theme_nothing() + theme(legend.position = "none")
+for (crimeType in crimeTypes)#
+{#
+	p <- ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") +#
+				labs(title=crimeType)#
+	p#
+}
+for (crimeType in crimeTypes)#
+{#
+	p <- ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") +#
+				labs(title=crimeType) + ggsave(paste('img/',crimeType,'.png',sep=''))#
+}#
+#
+}
+for (crimeType in crimeTypes)#
+{#
+	p <- ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") +#
+				labs(title=crimeType) + ggsave(paste('img/',crimeType,'.png',sep=''))#
+}
+i <- 1#
+for (crimeType in crimeTypes)#
+{#
+	col<-rgb(runif(i),runif(i),runif(i)) #
+	p <- ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				color = col,#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") +#
+				labs(title=crimeType) + ggsave(paste('img/',crimeType,'.png',sep=''))#
+	i <- i + 1#
+}
+for (crimeType in crimeTypes)#
+{#
+	p <- ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") + scale_colour_manual(values=cbPalette) + #
+				labs(title=crimeType) + ggsave(paste('img/',crimeType,'.png',sep=''))#
+}
+cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+for (crimeType in crimeTypes)#
+{#
+	p <- ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") + scale_colour_manual(values=cbPalette) + #
+				labs(title=crimeType) + ggsave(paste('img/',crimeType,'.png',sep=''))#
+}
+for (crimeType in crimeTypes)#
+{#
+	p <- ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") + scale_colour_hue() + #
+				labs(title=crimeType) + ggsave(paste('img/',crimeType,'.png',sep=''))#
+}
+for (crimeType in crimeTypes)#
+{#
+	p <- ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") + scale_fill_gradient(low='black,high='red') + #
+				labs(title=crimeType) + ggsave(paste('img/',crimeType,'.png',sep=''))#
+}
+for (crimeType in crimeTypes)#
+{#
+	p <- ggplot(chicago) + geom_path(aes(x=long, y=lat, group=group)) +#
+			stat_density2d(#
+				aes(x = X.Coordinate, y = Y.Coordinate, fill = ..level..,#
+				alpha = ..level..),#
+				size = 2, bins = 4, data = crimeSubsets[[crimeType]],#
+				geom = "polygon") + scale_fill_gradient(low='black',high='red') + #
+				labs(title=crimeType) + ggsave(paste('img/',crimeType,'.png',sep=''))#
+}
+summary(crimeSubsets[['PROSTITUTION']])

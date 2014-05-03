@@ -1,0 +1,101 @@
+homicide,theft,arson,battery,criminal_damage,community_area,sexual_assault,prostitution,narcotics,community_name,assault,robbery,year,burglary,community_number,crime_date,motor_vehicle_theft
+0,4,0,2,7,/api/1.0-beta1/communityarea/1/,0,0,4,Rogers Park,0,1,2001,1,1,2001-01-01,0
+0,5,0,0,6,/api/1.0-beta1/communityarea/2/,1,0,1,West Ridge,0,0,2001,1,2,2001-01-01,0
+0,6,0,0,5,/api/1.0-beta1/communityarea/3/,0,0,1,Uptown,0,4,2001,4,3,2001-01-01,0
+0,0,0,1,2,/api/1.0-beta1/communityarea/4/,1,0,0,Lincoln Square,0,0,2001,1,4,2001-01-01,1
+0,1,0,0,2,/api/1.0-beta1/communityarea/5/,0,0,0,North Center,0,0,2001,0,5,2001-01-01,0
+0,10,0,0,5,/api/1.0-beta1/communityarea/6/,0,0,0,Lake View,0,2,2001,2,6,2001-01-01,2
+0,6,0,0,3,/api/1.0-beta1/communityarea/7/,3,1,0,Lincoln Park,0,0,2001,1,7,2001-01-01,1
+0,20,0,0,6,/api/1.0-beta1/communityarea/8/,0,0,0,Near North Side,0,2,2001,1,8,2001-01-01,0
+0,1,0,0,0,/api/1.0-beta1/communityarea/9/,0,0,0,Edison Park,0,0,2001,0,9,2001-01-01,0
+0,1,0,0,1,/api/1.0-beta1/communityarea/10/,1,0,0,Norwood Park,0,0,2001,0,10,2001-01-01,0
+0,2,0,0,3,/api/1.0-beta1/communityarea/11/,0,0,0,Jefferson Park,0,0,2001,0,11,2001-01-01,0
+0,1,0,0,0,/api/1.0-beta1/communityarea/12/,0,0,0,Forest Glen,0,0,2001,0,12,2001-01-01,0
+0,0,0,0,0,/api/1.0-beta1/communityarea/13/,0,0,0,North Park,0,0,2001,0,13,2001-01-01,0
+0,6,0,1,2,/api/1.0-beta1/communityarea/14/,2,0,2,Albany Park,0,0,2001,0,14,2001-01-01,2
+0,7,0,0,2,/api/1.0-beta1/communityarea/15/,2,0,1,Portage Park,0,0,2001,3,15,2001-01-01,0
+0,6,0,1,7,/api/1.0-beta1/communityarea/16/,1,0,2,Irving Park,0,0,2001,0,16,2001-01-01,1
+0,0,0,1,0,/api/1.0-beta1/communityarea/17/,0,0,0,Dunning,0,1,2001,1,17,2001-01-01,0
+0,0,0,0,0,/api/1.0-beta1/communityarea/18/,0,0,0,Montclare,0,0,2001,0,18,2001-01-01,0
+0,14,0,2,3,/api/1.0-beta1/communityarea/19/,3,0,0,Belmont Cragin,1,0,2001,2,19,2001-01-01,3
+0,2,0,0,3,/api/1.0-beta1/communityarea/20/,2,0,0,Hermosa,0,0,2001,1,20,2001-01-01,0
+0,2,0,2,6,/api/1.0-beta1/communityarea/21/,2,0,2,Avondale,1,2,2001,0,21,2001-01-01,1
+1,10,0,0,4,/api/1.0-beta1/communityarea/22/,0,0,4,Logan Square,0,0,2001,1,22,2001-01-01,2
+0,21,0,2,4,/api/1.0-beta1/communityarea/23/,5,0,4,Humboldt Park,1,2,2001,4,23,2001-01-01,1
+0,18,0,0,4,/api/1.0-beta1/communityarea/24/,1,1,0,West Town,2,2,2001,2,24,2001-01-01,2
+0,22,0,3,14,/api/1.0-beta1/communityarea/25/,5,0,9,Austin,1,3,2001,3,25,2001-01-01,2
+0,4,0,0,3,/api/1.0-beta1/communityarea/26/,2,0,2,West Garfield Park,2,1,2001,2,26,2001-01-01,0
+0,4,0,0,1,/api/1.0-beta1/communityarea/27/,2,1,3,East Garfield Park,1,1,2001,0,27,2001-01-01,1
+1,6,0,2,4,/api/1.0-beta1/communityarea/28/,0,2,2,Near West Side,0,2,2001,2,28,2001-01-01,1
+0,10,0,2,6,/api/1.0-beta1/communityarea/29/,1,0,2,North Lawndale,1,0,2001,0,29,2001-01-01,1
+0,6,0,1,4,/api/1.0-beta1/communityarea/30/,3,0,1,South Lawndale,3,0,2001,1,30,2001-01-01,0
+0,4,0,0,4,/api/1.0-beta1/communityarea/31/,0,0,0,Lower West Side,0,3,2001,0,31,2001-01-01,1
+0,14,0,0,0,/api/1.0-beta1/communityarea/32/,1,0,1,Loop,0,0,2001,0,32,2001-01-01,1
+0,3,0,0,2,/api/1.0-beta1/communityarea/33/,0,0,3,Near South Side,0,0,2001,0,33,2001-01-01,1
+0,2,0,0,0,/api/1.0-beta1/communityarea/34/,0,0,1,Armour Square,0,0,2001,0,34,2001-01-01,1
+0,7,0,1,6,/api/1.0-beta1/communityarea/35/,1,0,5,Douglas,0,0,2001,0,35,2001-01-01,0
+0,1,0,0,0,/api/1.0-beta1/communityarea/36/,0,0,1,Oakland,0,0,2001,0,36,2001-01-01,2
+0,1,0,0,1,/api/1.0-beta1/communityarea/37/,0,0,1,Fuller Park,1,0,2001,0,37,2001-01-01,0
+0,2,0,0,6,/api/1.0-beta1/communityarea/38/,1,0,2,Grand Boulevard,0,0,2001,0,38,2001-01-01,0
+0,1,0,0,2,/api/1.0-beta1/communityarea/39/,1,0,0,Kenwood,0,0,2001,0,39,2001-01-01,0
+0,5,0,0,3,/api/1.0-beta1/communityarea/40/,1,0,9,Washington Park,1,3,2001,0,40,2001-01-01,1
+0,3,0,0,1,/api/1.0-beta1/communityarea/41/,0,0,0,Hyde Park,0,0,2001,0,41,2001-01-01,1
+0,6,0,2,7,/api/1.0-beta1/communityarea/42/,2,0,0,Woodlawn,0,1,2001,1,42,2001-01-01,2
+0,17,0,2,10,/api/1.0-beta1/communityarea/43/,1,0,4,South Shore,1,1,2001,1,43,2001-01-01,2
+0,9,0,0,3,/api/1.0-beta1/communityarea/44/,0,0,2,Chatham,0,4,2001,1,44,2001-01-01,0
+0,0,0,2,0,/api/1.0-beta1/communityarea/45/,0,0,0,Avalon Park,0,0,2001,0,45,2001-01-01,1
+0,8,0,1,3,/api/1.0-beta1/communityarea/46/,3,0,3,South Chicago,0,1,2001,1,46,2001-01-01,1
+0,0,0,0,0,/api/1.0-beta1/communityarea/47/,0,0,0,Burnside,1,0,2001,0,47,2001-01-01,0
+0,4,0,1,2,/api/1.0-beta1/communityarea/48/,0,0,0,Calumet Heights,0,0,2001,0,48,2001-01-01,0
+0,10,0,1,8,/api/1.0-beta1/communityarea/49/,5,0,4,Roseland,1,1,2001,1,49,2001-01-01,3
+0,3,0,0,1,/api/1.0-beta1/communityarea/50/,2,0,0,Pullman,0,0,2001,0,50,2001-01-01,0
+0,0,0,0,3,/api/1.0-beta1/communityarea/51/,0,0,0,South Deering,0,1,2001,1,51,2001-01-01,0
+0,2,0,0,0,/api/1.0-beta1/communityarea/52/,1,0,2,East Side,0,0,2001,1,52,2001-01-01,0
+0,9,0,1,0,/api/1.0-beta1/communityarea/53/,0,0,2,West Pullman,1,0,2001,2,53,2001-01-01,0
+0,1,0,1,5,/api/1.0-beta1/communityarea/54/,0,0,1,Riverdale,0,0,2001,0,54,2001-01-01,0
+0,0,0,0,0,/api/1.0-beta1/communityarea/55/,0,0,0,Hegewisch,0,0,2001,0,55,2001-01-01,1
+0,2,0,0,2,/api/1.0-beta1/communityarea/56/,0,0,0,Garfield Ridge,0,0,2001,1,56,2001-01-01,1
+0,1,0,0,1,/api/1.0-beta1/communityarea/57/,0,0,0,Archer Heights,0,0,2001,1,57,2001-01-01,1
+0,4,0,1,6,/api/1.0-beta1/communityarea/58/,2,0,3,Brighton Park,1,0,2001,2,58,2001-01-01,0
+0,5,0,0,1,/api/1.0-beta1/communityarea/59/,0,0,0,McKinley Park,0,0,2001,0,59,2001-01-01,0
+0,2,0,1,1,/api/1.0-beta1/communityarea/60/,0,0,0,Bridgeport,0,0,2001,2,60,2001-01-01,1
+0,7,0,1,4,/api/1.0-beta1/communityarea/61/,3,0,2,New City,1,0,2001,2,61,2001-01-01,1
+0,1,0,0,1,/api/1.0-beta1/communityarea/62/,1,0,0,West Elsdon,0,1,2001,1,62,2001-01-01,0
+0,5,0,2,4,/api/1.0-beta1/communityarea/63/,1,0,2,Gage Park,1,0,2001,1,63,2001-01-01,3
+0,2,0,0,1,/api/1.0-beta1/communityarea/64/,1,0,0,Clearing,0,0,2001,0,64,2001-01-01,1
+0,2,0,0,2,/api/1.0-beta1/communityarea/65/,0,0,0,West Lawn,0,0,2001,2,65,2001-01-01,1
+0,6,0,1,4,/api/1.0-beta1/communityarea/66/,1,0,0,Chicago Lawn,0,0,2001,2,66,2001-01-01,2
+0,10,0,2,2,/api/1.0-beta1/communityarea/67/,2,0,3,West Englewood,1,0,2001,1,67,2001-01-01,0
+0,10,0,2,6,/api/1.0-beta1/communityarea/68/,1,0,5,Englewood,2,0,2001,2,68,2001-01-01,1
+0,7,0,1,5,/api/1.0-beta1/communityarea/69/,1,0,0,Greater Grand Crossing,1,0,2001,0,69,2001-01-01,2
+0,3,0,0,2,/api/1.0-beta1/communityarea/70/,2,0,0,Ashburn,0,1,2001,3,70,2001-01-01,0
+0,11,0,1,6,/api/1.0-beta1/communityarea/71/,3,0,0,Auburn Gresham,1,0,2001,1,71,2001-01-01,3
+0,1,0,0,0,/api/1.0-beta1/communityarea/72/,1,0,0,Beverly,0,0,2001,1,72,2001-01-01,0
+0,7,0,0,6,/api/1.0-beta1/communityarea/73/,0,0,0,Washington Heights,0,0,2001,0,73,2001-01-01,0
+0,0,0,0,0,/api/1.0-beta1/communityarea/74/,0,0,0,Mount Greenwood,0,0,2001,0,74,2001-01-01,0
+0,2,0,0,4,/api/1.0-beta1/communityarea/75/,0,0,0,Morgan Park,0,0,2001,0,75,2001-01-01,1
+0,5,0,0,1,/api/1.0-beta1/communityarea/76/,0,0,0,O’Hare,0,0,2001,0,76,2001-01-01,1
+0,5,0,0,0,/api/1.0-beta1/communityarea/77/,3,0,0,Edgewater,1,0,2001,1,77,2001-01-01,1
+0,4,0,0,3,/api/1.0-beta1/communityarea/1/,0,0,2,Rogers Park,1,0,2001,1,1,2001-01-02,0
+0,1,0,0,6,/api/1.0-beta1/communityarea/2/,0,0,0,West Ridge,1,0,2001,4,2,2001-01-02,0
+0,4,0,0,2,/api/1.0-beta1/communityarea/3/,0,0,6,Uptown,0,1,2001,0,3,2001-01-02,2
+0,1,0,0,1,/api/1.0-beta1/communityarea/4/,0,0,0,Lincoln Square,0,1,2001,1,4,2001-01-02,0
+0,2,0,0,0,/api/1.0-beta1/communityarea/5/,0,0,0,North Center,0,1,2001,1,5,2001-01-02,2
+0,4,0,0,4,/api/1.0-beta1/communityarea/6/,0,0,2,Lake View,0,0,2001,2,6,2001-01-02,2
+0,5,0,1,2,/api/1.0-beta1/communityarea/7/,0,0,1,Lincoln Park,0,0,2001,0,7,2001-01-02,3
+0,14,0,0,6,/api/1.0-beta1/communityarea/8/,0,1,6,Near North Side,1,0,2001,0,8,2001-01-02,1
+0,0,0,0,0,/api/1.0-beta1/communityarea/10/,0,0,1,Norwood Park,0,0,2001,0,10,2001-01-02,0
+0,1,0,0,1,/api/1.0-beta1/communityarea/11/,0,0,0,Jefferson Park,0,0,2001,2,11,2001-01-02,0
+0,1,0,0,0,/api/1.0-beta1/communityarea/12/,0,0,0,Forest Glen,0,0,2001,3,12,2001-01-02,0
+0,0,0,0,0,/api/1.0-beta1/communityarea/13/,0,0,1,North Park,0,0,2001,0,13,2001-01-02,1
+0,1,0,0,1,/api/1.0-beta1/communityarea/14/,0,0,0,Albany Park,0,0,2001,0,14,2001-01-02,0
+0,3,0,0,1,/api/1.0-beta1/communityarea/15/,0,0,1,Portage Park,0,0,2001,0,15,2001-01-02,0
+0,1,0,0,1,/api/1.0-beta1/communityarea/16/,0,0,1,Irving Park,0,0,2001,0,16,2001-01-02,0
+0,1,0,0,0,/api/1.0-beta1/communityarea/17/,0,0,0,Dunning,0,0,2001,0,17,2001-01-02,0
+0,0,0,0,0,/api/1.0-beta1/communityarea/18/,0,0,0,Montclare,0,0,2001,0,18,2001-01-02,0
+0,5,0,0,2,/api/1.0-beta1/communityarea/19/,0,0,2,Belmont Cragin,0,1,2001,2,19,2001-01-02,1
+0,0,0,0,0,/api/1.0-beta1/communityarea/20/,0,0,1,Hermosa,0,0,2001,0,20,2001-01-02,0
+0,1,0,0,2,/api/1.0-beta1/communityarea/21/,0,0,0,Avondale,0,0,2001,2,21,2001-01-02,0
+0,3,0,0,1,/api/1.0-beta1/communityarea/22/,0,4,1,Logan Square,0,2,2001,3,22,2001-01-02,3
+0,6,0,1,2,/api/1.0-beta1/communityarea/23/,0,0,13,Humboldt Park,0,1,2001,3,23,2001-01-02,2
+0,11,0,1,7,/api/1.0-beta1/communityarea/24/,0,1,1,West Town,1,1,2001,6,24,2001-01-02,5

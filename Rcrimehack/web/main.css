@@ -1,0 +1,76 @@
+/* CSS Document */
+
+body 
+{
+  margin: 0px 0px 0px 0px;
+  font-family: Verdana, Geneva, sans-serif; 
+  font-size: 16px; 
+  background-color: #FFF; 
+  text-decoration: none; 
+  font-weight: normal; 
+  line-height: normal;
+}
+
+a:link {
+	text-decoration: none;
+	color:black;
+}
+a:visited {
+	text-decoration: none;
+	color:black;
+}
+a:hover {
+	text-decoration: none;
+	color:black;
+}
+a:active {
+	text-decoration: none;
+}
+
+#container {
+	width: 800px;
+	height: 600px;
+    /*border: solid 1px;*/
+    margin-left: auto;
+  	margin-right: auto;
+}
+
+
+p.headertext
+{
+	position:relative;
+	left:90px;
+	bottom:40px;
+}
+
+#header {
+    color: black;
+    padding: 5px 5px 0px 5px;
+    margin-top:10px;
+    margin-bottom:10px; 
+    border-bottom:solid 2px black;
+}
+
+#navigation {
+	margin-top:20px;
+    color:black;
+    width: 175px;
+    float: left;
+    margin-left: 10px;
+}
+
+#imagegrid {
+	margin-top:20px;
+    float: left;
+    width: 600px;
+    height:500px;
+    margin-left:20px;
+}
+
+/*
+#footer {
+  clear: both;
+  padding: 20px;
+  background: #CCC; 
+}
+*/
